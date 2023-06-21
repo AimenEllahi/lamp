@@ -38,7 +38,7 @@ export function Lamp(props) {
       dispose={null}
     >
       <PresentationControls polar={[0, 0]}>
-        {" "}
+        <pointLight />{" "}
         <mesh
           receiveShadow
           castShadow
