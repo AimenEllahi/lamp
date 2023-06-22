@@ -10,7 +10,7 @@ import {
   PresentationControls,
   SpotLight,
 } from "@react-three/drei";
-import { Lamp } from "./Lamp";
+import { LampNew } from "./LampNew";
 import { MeshBasicMaterial } from "three";
 import ScrollAnimation from "./ScrollAnimation";
 
@@ -38,7 +38,7 @@ export default function Index() {
     opacity,
   } = useControls("SpotLight", {
     position: {
-      value: [0, 2.05, 1],
+      value: [0, 1.75, 1.1],
       step: 0.05,
     },
     rotation: { value: [0, 0, 0], step: 0.1 },
@@ -67,8 +67,8 @@ export default function Index() {
       >
         <Canvas shadows>
           {/*  */}
-          <ambientLight intensity={0.5} />
-          <directionalLight intensity={0.5} />
+          {/* <ambientLight intensity={0.5} />
+          <directionalLight intensity={0.5} /> */}
           <pointLight position={[10, 5, 10]} />
           {/* <Environment preset='city' /> */}
 
@@ -94,7 +94,7 @@ export default function Index() {
             <SpotLight
               castShadow
               receiveShadow
-              position={[0, 2.3, 1]}
+              position={[0, 1.7, 1]}
               rotation={rotation}
               penumbra={0.8}
               radiusTop={1.38}
@@ -107,7 +107,7 @@ export default function Index() {
               opacity={0.5}
               color={"#fffffff"}
             />
-            <Lamp />
+            <LampNew />
 
             {/* <mesh
             position={position}
