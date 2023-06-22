@@ -32,8 +32,8 @@ export default function ScrollAnimation() {
       y: 1,
       z: -2.5,
     }).to(camera.position, {
-      y: 0,
-      z: 5,
+      y: 1,
+      z: 3,
       duration: 4,
       ease: "power2.easeOut",
       onUpdate: () => {

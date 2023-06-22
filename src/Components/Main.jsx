@@ -69,11 +69,11 @@ export default function Index() {
           {/*  */}
           {/* <ambientLight intensity={0.5} />
           <directionalLight intensity={0.5} /> */}
-          <pointLight position={[10, 5, 10]} />
+          {/* <pointLight position={[10, 5, 10]} /> */}
           {/* <Environment preset='city' /> */}
 
           <Suspense fallback={<Loader />}>
-            <group>
+            {/* <group>
               <SpotLight
                 castShadow
                 position={position}
@@ -106,8 +106,10 @@ export default function Index() {
               intensity={1}
               opacity={0.5}
               color={"#fffffff"}
-            />
-            <LampNew />
+            /> */}
+            <PresentationControls>
+              <LampNew />
+            </PresentationControls>
 
             {/* <mesh
             position={position}
