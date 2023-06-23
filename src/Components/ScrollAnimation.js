@@ -38,9 +38,9 @@ export default function ScrollAnimation() {
         z: 2,
         y: 2,
         duration: 5,
-        onUpdate: () => {
-          camera.fov = 45;
-        },
+        // onUpdate: () => {
+        //   camera.fov = 45;
+        // },
       })
 
       // .to(camera.position, {
@@ -59,17 +59,17 @@ export default function ScrollAnimation() {
         z: 8,
         duration: 5,
         ease: "power2.easeOut",
-        onUpdate: () => {
-          if (scrollDirection.value > 0) {
-            gsap.to(camera.rotation, {
-              x: 0,
-            });
-          } else if (scrollDirection.value < 0 && camera.position.z < 0) {
-            gsap.to(camera.rotation, {
-              x: 0,
-            });
-          }
-        },
+        // onUpdate: () => {
+        //   if (scrollDirection.value > 0) {
+        //     gsap.to(camera.rotation, {
+        //       x: 0,
+        //     });
+        //   } else if (scrollDirection.value < 0 && camera.position.z < 0) {
+        //     gsap.to(camera.rotation, {
+        //       x: 0,
+        //     });
+        //   }
+        // },
       });
 
     ScrollTrigger.create({
