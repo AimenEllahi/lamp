@@ -43,12 +43,12 @@ export default function ScrollAnimation() {
         },
       })
 
-      .to(camera.position, {
-        x: 0,
-        y: 1.1,
-        z: 0,
-        duration: 5,
-      })
+      // .to(camera.position, {
+      //   x: 0,
+      //   y: 1.1,
+      //   z: 0,
+      //   duration: 5,
+      // })
       // .to(camera.rotation, {
       //   x: 2,
       // })
