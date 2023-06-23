@@ -37,6 +37,7 @@ export default function ScrollAnimation() {
       .to(camera.position, {
         z: 2,
         y: 2,
+        duration: 5,
         onUpdate: () => {
           camera.fov = 45;
         },
@@ -46,7 +47,7 @@ export default function ScrollAnimation() {
         x: 0,
         y: 1.1,
         z: 0,
-        duration: 2,
+        duration: 5,
       })
       // .to(camera.rotation, {
       //   x: 2,
@@ -56,7 +57,7 @@ export default function ScrollAnimation() {
         y: 0.5,
         delay: 0.5,
         z: 8,
-        duration: 4,
+        duration: 5,
         ease: "power2.easeOut",
         onUpdate: () => {
           if (scrollDirection.value > 0) {
