@@ -45,7 +45,8 @@ export default function ScrollAnimation() {
       .to(camera.position, {
         x: 0,
         y: 1.1,
-        z: -2.8,
+        z: 0,
+        duration: 2,
       })
       // .to(camera.rotation, {
       //   x: 2,
