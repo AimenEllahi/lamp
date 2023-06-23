@@ -66,93 +66,10 @@ export default function Index() {
         }}
       >
         <Canvas shadows>
-          {/*  */}
-          {/* <ambientLight intensity={0.5} />
-          <directionalLight intensity={0.5} /> */}
-          {/* <pointLight position={[10, 5, 10]} /> */}
-          {/* <Environment preset='city' /> */}
-
           <Suspense fallback={<Loader />}>
-            {/* <group>
-              <SpotLight
-                castShadow
-                position={position}
-                rotation={rotation}
-                penumbra={0.8}
-                radiusTop={radiusTop}
-                radiusBottom={40}
-                distance={30}
-                angle={0.8}
-                attenuation={20}
-                anglePower={5}
-                intensity={110}
-                opacity={0.3}
-                color={"#ffffff"}
-              />
-            </group>
-
-            <SpotLight
-              castShadow
-              receiveShadow
-              position={[0, 1.7, 1]}
-              rotation={rotation}
-              penumbra={0.8}
-              radiusTop={1.38}
-              radiusBottom={40}
-              distance={-50}
-              angle={0.8}
-              attenuation={20}
-              anglePower={5}
-              intensity={1}
-              opacity={0.5}
-              color={"#fffffff"}
-            /> */}
             <PresentationControls>
               <LampNew />
             </PresentationControls>
-
-            {/* <mesh
-            position={position}
-            rotation={[Math.PI / 2, 0, 0]}
-            receiveShadow
-          >
-            <circleGeometry args={[65]} />
-            <meshBasicMaterial
-              color='#2e3233'
-              blur={[900, 900]}
-              resolution={1024}
-              mixBlur={1}
-              mixStrength={3}
-              depthScale={1}
-              minDepthThreshold={0.85}
-              receiveShadow
-              castShadow
-            />
-          </mesh> */}
-            {/* <mesh
-            position={position}
-            rotation={[-Math.PI / 2, 0, 0]}
-            receiveShadow
-          >
-            <planeGeometry args={[1000, 800]} />
-            <meshStandardMaterial color='#221f1f' receiveShadow />
-          </mesh> */}
-            {/* <mesh position={position} rotation={[0, 0, 0]} receiveShadow>
-            <planeGeometry args={[400, 200]} />
-            <MeshReflectorMaterial
-              color='#221f1f'
-              blur={[900, 900]}
-              resolution={1024}
-              mixBlur={1}
-              mixStrength={3}
-              depthScale={1}
-              minDepthThreshold={0.85}
-              metalness={1}
-              roughness={0.1}
-              receiveShadow
-              castShadow
-            />
-          </mesh> */}
           </Suspense>
           <ScrollAnimation />
           {/* <OrbitControls /> */}
