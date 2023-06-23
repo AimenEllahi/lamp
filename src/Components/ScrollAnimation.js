@@ -7,10 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ScrollAnimation() {
   const { camera } = useThree();
 
-  const { position, rotation } = useControls({
+  const { position, rotation } = useControls("camera",{
     position: {
-      value: [0, 2.9, -2.5],
-      step: 0.1,
+      value: [0, 2.55, 0.55],
+      step: 0.01,
     },
     rotation: {
       value: [0, 0, 0],
@@ -31,8 +31,8 @@ export default function ScrollAnimation() {
     const scrollDirection = { value: 0 };
     t1.from(camera.position, {
       x: 0,
-      y: 2.9,
-      z: -2.5,
+      y: 2.51,
+      z: 0.13,
     })
       .to(camera.position, {
         z: 2,
@@ -47,9 +47,9 @@ export default function ScrollAnimation() {
         y: 1.1,
         z: -2.8,
       })
-      .to(camera.rotation, {
-        x: 2,
-      })
+      // .to(camera.rotation, {
+      //   x: 2,
+      // })
 
       .to(camera.position, {
         y: 0.5,
@@ -64,7 +64,7 @@ export default function ScrollAnimation() {
             });
           } else if (scrollDirection.value < 0 && camera.position.z < 0) {
             gsap.to(camera.rotation, {
-              x: 2,
+              x: 0,
             });
           }
         },
